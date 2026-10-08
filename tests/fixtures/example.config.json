@@ -1,0 +1,7 @@
+{
+  "OLLAMA_BASE_URL": "http://127.0.0.1:11434",
+  "DATA_DIR": "./data",
+  "LOG_DIR": "./logs",
+  "LOG_LEVEL": "INFO",
+  "DEBUG": false
+}
