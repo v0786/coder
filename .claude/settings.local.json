@@ -1,0 +1,181 @@
+{
+  "permissions": {
+    "allowBashCommands": [
+      // Git operations
+      "git status",
+      "git diff",
+      "git log",
+      "git branch",
+      "git add",
+      "git commit",
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "git checkout",
+      "git switch",
+
+      // Package management
+      "npm install",
+      "npm ci",
+      "npm update",
+      "npm outdated",
+      "npm list",
+      "npm view",
+      "npm run ",
+      "npm test",
+      "npm run build",
+      "npm run lint",
+      "npm run format",
+      "npm run dev",
+      "npm run start",
+      "npm run serve",
+
+      // Node and package execution
+      "node ",
+      "npx ",
+      "pnpm ",
+
+      // TypeScript and compilation
+      "tsc ",
+      "tsc --version",
+      "tsc --build",
+
+      // System information
+      "npm --version",
+      "node --version",
+      "npx --version",
+      "pnpm --version",
+
+      // File operations (read-only or within project)
+      "find .",
+      "grep -r",
+      "cat ",
+      "head ",
+      "tail ",
+      "less ",
+      "more ",
+
+      // Development servers and tools
+      "vite",
+      "webpack",
+      "rollup",
+      "esbuild",
+      "nodemon",
+      "concurrently",
+
+      // Testing frameworks
+      "jest",
+      "mocha",
+      "jasmine",
+      "karma",
+      "cypress",
+      "playwright",
+
+      // Linters and formatters
+      "eslint",
+      "prettier",
+      "stylelint",
+      "htmlhint",
+
+      // Environment and configuration
+      "env ",
+      "which ",
+      "whereis ",
+      "type ",
+
+      // Version control information
+      "svn info",
+      "hg status"
+    ],
+
+    "allowReadFile": {
+      "patterns": ["**/*", "!.git/**", "!node_modules/**"],
+      "maxSize": 10485760
+    },
+
+    "allowWriteFile": {
+      "patterns": [
+        "**/*",
+        "!.git/**",
+        "!node_modules/**",
+        "!*.key",
+        "!*.pem",
+        "!*.p12",
+        "!*.cer",
+        "!*.crt",
+        "!*.ssh/**"
+      ]
+    },
+
+    "allowListDir": {
+      "patterns": ["**/*", "!.git/**", "!node_modules/**"]
+    },
+
+    "dangerousCommands": [
+      "rm -rf",
+      "sudo",
+      "dd ",
+      "mount ",
+      "umount ",
+      "chown ",
+      "chmod ",
+      "mv /",
+      "cp /",
+      "mv ~",
+      "cp ~",
+      "rsync /",
+      "dd if=",
+      "dd of=",
+      "shutdown ",
+      "reboot ",
+      "poweroff ",
+      "passwd ",
+      "usermod ",
+      "groupadd ",
+      "userdel ",
+      "passwd ",
+      "crontab ",
+      "systemctl ",
+      "init ",
+      "service ",
+      "iptables ",
+      "ufw ",
+      "firewall-cmd ",
+      "semanage ",
+      "restorecon ",
+      "ssh ",
+      "scp ",
+      "sftp ",
+      "export ",
+      "echo \$",
+      "printenv ",
+      "set ",
+      "env | grep -i pass",
+      "env | grep -i token",
+      "env | grep -i key",
+      "*secret*",
+      "*credentials*",
+      "cat ~/.ssh/id_rsa",
+      "cat ~/.ssh/id_ed25519",
+      "cat ~/.aws/credentials",
+      "cat ~/.config/gcloud/application_default_credentials.json",
+      "find / -name \"*.p12\"",
+      "find / -name \"*.pem\"",
+      "mysql -u root",
+      "psql postgres",
+      "mongo admin",
+      "redis-cli",
+      "sqlite3",
+      "mongodump",
+      "mysqldump",
+      "pg_dump",
+      "ssh-keygen",
+      "ssh-copy-id"
+    ]
+  },
+
+  "description": "Project-local settings for development workflow",
+  "appliesTo": "project"
+}
